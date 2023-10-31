@@ -8,20 +8,20 @@ This week we have released a new version of **CosmWasm MultiTest**.
 We are excited to share some details about recent updates to **CosmWasm MultiTest**
 and would like you to try them out for yourself!
 
-The new enhancements in version **0.18.0** of **CosmWasm MultiTest** include:
+The new major enhancements in version **0.18.0** of **CosmWasm MultiTest** include:
 
-- Handling `Instantiate2` message
-- Support for `CodeInfo` message
+- Handling `WasmMsg::Instantiate2` message
+- Support for `WasmQuery::CodeInfo` message
 - Custom checksum generator
 - Improved custom address generator
-- Unlocked custom `Api`
+- Extended `Wasm` trait
 
 
-## Handling `Instantiate2` message
+## Handling `WasmMsg::Instantiate2` message
 
 Link to article of Simon: [Dev Note #3: Limitations of Instantiate2 and how to deal with them](https://medium.com/cosmwasm/dev-note-3-limitations-of-instantiate2-and-how-to-deal-with-them-a3f946874230)
 
-## Support for `CodeInfo` message
+## Support for `WasmQuery::CodeInfo` message
 
 ## Custom checksum generator
 
@@ -29,4 +29,4 @@ Link to article of Simon: [Dev Note #3: Limitations of Instantiate2 and how to d
 
 Example with `Bech32`
 
-## Unlocked custom `Api`
+## Extended `Wasm` trait
