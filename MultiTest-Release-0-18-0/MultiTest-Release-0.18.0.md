@@ -15,11 +15,13 @@ The new major enhancements in version **0.18.0** of **CosmWasm MultiTest** inclu
 - Custom checksum generator
 - Improved custom address generator
 - Extended `Wasm` trait
+- Contract code duplication
 
 
 ## Handling `WasmMsg::Instantiate2` message
 
-Link to article of Simon: [Dev Note #3: Limitations of Instantiate2 and how to deal with them](https://medium.com/cosmwasm/dev-note-3-limitations-of-instantiate2-and-how-to-deal-with-them-a3f946874230)
+Link to article of Simon:
+[Dev Note #3: Limitations of Instantiate2 and how to deal with them](https://medium.com/cosmwasm/dev-note-3-limitations-of-instantiate2-and-how-to-deal-with-them-a3f946874230)
 
 ## Support for `WasmQuery::CodeInfo` message
 
@@ -30,3 +32,5 @@ Link to article of Simon: [Dev Note #3: Limitations of Instantiate2 and how to d
 Example with `Bech32`
 
 ## Extended `Wasm` trait
+
+## Contract code duplication
