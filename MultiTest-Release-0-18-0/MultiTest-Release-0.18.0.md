@@ -5,10 +5,10 @@ Photo by <a href="https://unsplash.com/@sigmund?utm_content=creditCopyText&utm_m
 on <a href="https://unsplash.com/photos/brown-and-black-jigsaw-puzzle-B-x4VaIriRc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 This week we have released a new version of **CosmWasm MultiTest**.
-We are excited to share some details about recent updates to **CosmWasm MultiTest 0.18.0**
+We are excited to share some details about recent updates to **CosmWasm MultiTest**
 and would like you to try them out for yourself!
 
-The new enhancements in version **0.18.0** include:
+The new enhancements in version **0.18.0** of **CosmWasm MultiTest** include:
 
 - Handling `Instantiate2` message
 - Support for `CodeInfo` message
