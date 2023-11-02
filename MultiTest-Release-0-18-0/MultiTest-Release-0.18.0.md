@@ -36,8 +36,8 @@ Example with `Bech32`
 ## Contract code duplication
 
 We added the possibility to easily duplicate contract code during testing.
-Now, the `App` provides a function `duplicate_code` that creates a copy of contract code.
-Having an identifier of the copy of the contract code, new contracts may be instantiated
+Now, the `App` provides a function `duplicate_code` that creates a copy of the contract code.
+Having the identifier of the copy of the contract code, new contracts may be instantiated
 and used exactly as the original. The behaviour of instantiated contracts will be exactly the same.
 An example of using `duplicate_code` function is shown below.
 
