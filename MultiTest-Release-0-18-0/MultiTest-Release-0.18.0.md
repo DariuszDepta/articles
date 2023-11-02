@@ -1,4 +1,4 @@
-# CosmWasm MultiTest 0.18 released 
+# CosmWasm MultiTest 0.18 released
 
 ![pieces](sigmund-unsplash.jpg)
 Photo by <a href="https://unsplash.com/@sigmund?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sigmund</a>
