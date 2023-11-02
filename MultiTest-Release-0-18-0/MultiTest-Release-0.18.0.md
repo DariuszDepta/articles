@@ -25,7 +25,14 @@ Link to article of Simon:
 
 ## `WasmQuery::CodeInfo` message handling
 
-
+In version 1.2 **cosmwasm-std** introduced `WasmQuery::CodeInfo`, which queries
+the metadata of the contract's code. Returned metadata contains such information like code identifier,
+address of the entity that stored the contract and the checksum of the original contract's code.
+**MultiTest** supports this message since version 0.17. Since in the case of **MultiTest**,
+we are not dealing with physical Wasm binary of the contract, to prepare the checksum,
+we have used in `WasmKeeper` an internal checksum generator.
+In version 0.18 of **MultiTest** we have introduced support for custom checksum generator,
+described in details in the next section. 
 
 ## Custom checksum generator support
 
