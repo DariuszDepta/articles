@@ -42,15 +42,19 @@ Now it is possible and straightforward to provide a custom implementation of `Wa
 like in the following example:
 
 ```rust
-// create the custom wasm keeper that implements Wasm trait 
+// prepare the implementation of Wasm trait for custom wasm keeper,
+// named for example MyWasmKeeper
+
+// create the custom wasm keeper 
 let my_wasm_keeper = MyWasmKeeper::default();
 
-// use the application builder
+// prepare the application builder
 let app_builder = AppBuilder::default();
 
+// build the application with custom wasm keeper
 let mut app = app_builder.with_wasm(my_wasm_keeper).build(|_, _, _| {});
 
-// use the app with custom wasm keeper
+// use the application with custom wasm keeper
 ```
 
 ## Contract code duplication
