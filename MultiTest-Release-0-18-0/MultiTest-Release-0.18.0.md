@@ -33,6 +33,26 @@ Example with `Bech32`
 
 ## Extended `Wasm` trait
 
+**MultiTest** provides default implementation for `Wasm` trait named `WasmKeeper`.
+`WasmKeeper` takes care of all the complicated stuff like storing contracts' code, creating contracts,
+executing messages, processing queries, and many more. It's not an easy task to replace the `WasmKeeper`,
+but to keep **MultiTest** modular and to enable users to provide their own implementation of the `Wasm` trait,
+we have extended it, adding functions that were previously used internally by `App`. 
+Now it is possible and straightforward to provide a custom implementation of `Wasm` trait used by `App`,
+like in the following example:
+
+```rust
+// create the custom wasm keeper that implements Wasm trait 
+let my_wasm_keeper = MyWasmKeeper::default();
+
+// use the application builder
+let app_builder = AppBuilder::default();
+
+let mut app = app_builder.with_wasm(my_wasm_keeper).build(|_, _, _| {});
+
+// use the app with custom wasm keeper
+```
+
 ## Contract code duplication
 
 We added the possibility to easily duplicate contract code during testing.
