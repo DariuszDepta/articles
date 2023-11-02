@@ -10,28 +10,28 @@ and would like you to try them out for yourself!
 
 The new major enhancements in version **0.18.0** of **CosmWasm MultiTest** include:
 
-- Handling `WasmMsg::Instantiate2` message
-- Support for `WasmQuery::CodeInfo` message
-- Custom checksum generator
-- Improved custom address generator
-- Extended `Wasm` trait
+- `WasmMsg::Instantiate2` message handling
+- `WasmQuery::CodeInfo` message handling
+- Custom checksum generator support
+- Custom address generator improvements
+- `Wasm` trait extensions
 - Contract code duplication
 
 
-## Handling `WasmMsg::Instantiate2` message
+## `WasmMsg::Instantiate2` message handling
 
 Link to article of Simon:
 [Dev Note #3: Limitations of Instantiate2 and how to deal with them](https://medium.com/cosmwasm/dev-note-3-limitations-of-instantiate2-and-how-to-deal-with-them-a3f946874230)
 
-## Support for `WasmQuery::CodeInfo` message
+## `WasmQuery::CodeInfo` message handling
 
-## Custom checksum generator
+## Custom checksum generator support
 
-## Improved custom address generator
+## Custom address generator improvements
 
 Example with `Bech32`
 
-## Extended `Wasm` trait
+## `Wasm` trait extensions
 
 **MultiTest** provides default implementation for `Wasm` trait named `WasmKeeper`.
 `WasmKeeper` takes care of all the complicated stuff like storing contracts' code, creating contracts,
