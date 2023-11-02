@@ -34,3 +34,32 @@ Example with `Bech32`
 ## Extended `Wasm` trait
 
 ## Contract code duplication
+
+We added the possibility to easily duplicate contract code during testing.
+Now, the `App` provides a function `duplicate_code` that creates a copy of contract code.
+Having an identifier of the copy of the contract code, new contracts may be instantiated
+and used exactly as the original. The behaviour of instantiated contracts will be exactly the same.
+An example of using `duplicate_code` function is shown below.
+
+```rust
+// example contract implementation
+mod echo {
+
+  // entry points are not shown here
+  
+  pub fn contract() -> Box<dyn Contract<Empty>> {
+    // this function should return an example contract
+  }
+}
+
+// create the app
+let mut app = App::default();
+
+// store an example contract that will be duplicated later
+let code_id = app.store_code(echo::contract());
+
+// duplicate contract code
+let new_code_id = app.duplicate_code(code_id).unwrap();
+
+// instantiate contract using new_code_id
+```
