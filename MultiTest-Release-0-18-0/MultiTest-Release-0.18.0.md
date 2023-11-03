@@ -20,8 +20,8 @@ The new major enhancements in version **0.18.0** of **CosmWasm MultiTest** inclu
 
 ## `WasmMsg::Instantiate2` message handling
 
-Link to article of Simon:
-[Dev Note #3: Limitations of Instantiate2 and how to deal with them](https://medium.com/cosmwasm/dev-note-3-limitations-of-instantiate2-and-how-to-deal-with-them-a3f946874230)
+To learn more about pros and cons of using Instantiate2 message, read this article: 
+[Dev Note #3: Limitations of Instantiate2 and how to deal with them](https://medium.com/cosmwasm/dev-note-3-limitations-of-instantiate2-and-how-to-deal-with-them-a3f946874230).
 
 ## `WasmQuery::CodeInfo` message handling
 
